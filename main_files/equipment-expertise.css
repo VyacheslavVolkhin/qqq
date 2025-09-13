@@ -1,0 +1,290 @@
+.equipment-expertise-section {
+    padding: 100px 0;
+    background: #D1D3D5;
+}
+
+.equipment-expertise-header h2 {
+	margin-bottom: 50px;
+	line-height: 100%;
+}
+
+.equipment-expertise-header h2 a {
+	font-family: 'Roboto Condensed';
+	font-weight: 500;
+	font-size: 40px;
+	text-align: left;
+	line-height: 100%;
+	letter-spacing: 0;
+	color: #060606;
+	position: relative;
+}
+
+.equipment-expertise-header h2 a::after {
+	content: "\e907";
+    font-family: 'icomoon';
+    font-size: 20px;
+	color: #FFCD11;
+	position: absolute;
+    top: 2px;
+    height: 100%;
+    margin-left: 10px;
+    transition: color .4s ease-in-out;
+}
+
+.equipment-expertise-blocks {
+    display: flex;
+    gap: 15px;
+    height: 345px;
+}
+
+.equipment-expertise-blocks-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+.equipment-expertise-blocks-group:first-child {
+    width: 850px;
+    min-width: 850px;
+}
+
+.equipment-expertise-block {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    height: calc(50% - 15px + (15px / 2));
+}
+
+.equipment-expertise-block p {
+    font-family: 'Roboto Condensed';
+}
+
+.equipment-expertise-block__text {
+    padding: 25px;
+    width: 70%;
+}
+
+.equipment-expertise-block__image {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipment-expertise-block__title,
+.equipment-expertise-block__title a {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #060606;
+}
+
+.equipment-expertise-block__title a:hover {
+    color: #FC0;
+}
+
+.equipment-expertise-block__title a::after {
+    content: "";
+	border: solid #FFCD11;
+	border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 6px;
+    margin-bottom: 4px;
+    margin-left: -4px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.equipment-expertise-block__description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #6B6B6B;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds {
+    height: 100%;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__text {
+    width: 44%;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image {
+    width: 56%;
+    clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image img {
+    height: 100%;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__description {
+    margin-bottom: 30px;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .btn {
+    background: #353B3F;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    height: 50px;
+    width: 185px;
+    padding: 16px 33px;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .btn::after {
+    display: none;
+}
+
+.equipment-expertise-block.equipment-expertise-rebuilds .btn:hover {
+    background: #fff;
+    border: 2px solid #353B3F;
+}
+
+@media (max-width: 1440px) {
+    .equipment-expertise-blocks {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .equipment-expertise-rebuilds__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .equipment-expertise-blocks-group {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .equipment-expertise-blocks-group:first-child {
+        height: 345px;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .equipment-expertise-blocks-group:last-child .equipment-expertise-block {
+        width: 50%;
+        height: auto;
+    }
+
+    .equipment-expertise-blocks-group:last-child .equipment-expertise-block__text {
+        width: 80%;
+    }
+}
+
+@media (max-width: 960px) {
+    .equipment-expertise-section {
+        padding: 80px 0;
+    }
+
+    .equipment-expertise-header h2 {
+        margin-bottom: 30px;
+    }
+
+    .equipment-expertise-blocks-group:first-child {
+        height: 300px;
+    }
+
+    .equipment-expertise-block__title, .equipment-expertise-block__title a {
+        font-size: 24px;
+    }
+
+    .equipment-expertise-block__description {
+        font-size: 20px;
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds .btn {
+        font-size: 14px;
+        padding: 18px 33px;
+    }
+
+    .equipment-expertise-blocks-group:last-child .equipment-expertise-block__image img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .equipment-expertise-block__title a::after {
+        margin-bottom: 1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .equipment-expertise-blocks-group {
+        flex-wrap: wrap;
+    }
+
+    .equipment-expertise-blocks-group:first-child {
+        height: auto;
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds {
+        flex-direction: column;
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__text {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image {
+        width: 100%;
+        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image img {
+        margin-bottom: -200px;
+    }
+
+    .equipment-expertise-blocks-group:last-child .equipment-expertise-block {
+        width: 100%;
+        min-height: 135px;
+    }
+}
+
+@media (max-width: 650px) {
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image img {
+        margin-bottom: -100px;
+    }
+}
+
+@media (max-width: 375px) {
+    .equipment-expertise-section {
+        padding: 70px 0;
+    }
+
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__text {
+        padding-bottom: 10px;
+    }
+    
+    .equipment-expertise-block.equipment-expertise-rebuilds .equipment-expertise-block__image img {
+        margin-bottom: -50px;
+    }
+    
+    .equipment-expertise-block__title, 
+    .equipment-expertise-block__title a {
+        font-size: 20px;
+    }
+
+    .equipment-expertise-block__description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    .equipment-expertise-blocks-group:last-child .equipment-expertise-block__text {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 325px) {
+    .equipment-expertise-header h2 a {
+        font-size: 19px;
+    }
+}

@@ -1,0 +1,19 @@
+.page-id-7122 form.wpcf7-form {
+    margin: 50px 0;
+}
+
+.page-id-8 #locations_list .wpcf7-textarea {
+    height: 60px;
+}
+
+@media (max-width: 1024px) {
+    .page-id-8 .wysiwyg-content, .page-id-8 .accordion-wrapper {
+        max-width: 768px !important;
+    }
+}
+
+@media (max-width: 374px) {
+    .page-id-8 #locations_list h4 span, #locations_list .p-h4 span {
+        font-size: 40px !important;
+    }
+}

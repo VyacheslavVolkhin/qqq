@@ -1,0 +1,193 @@
+.rental-equipment-block {
+    position: relative;
+    width: 100%;
+}
+
+.rental-equipment-bg {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.rental-equipment-bg.desktop {
+	display: block;
+}
+
+.rental-equipment-bg.mobile {
+	display: none;
+}
+
+.rental-equipment-bg img {
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    font-family: 'object-fit: cover;';
+    height: inherit;
+    bottom: 0;
+}
+
+.rental-equipment-bg__shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #00000033;
+}
+
+.rental-equipment-content {
+    position: relative;
+    z-index: 10;
+    padding: 100px 0;
+}
+
+.rental-equipment-content, 
+.rental-equipment-content .container,
+.rental-equipment-content .rental-equipment-box {
+    height: 100%;
+}
+
+.rental-equipment-box {
+    width: 615px;
+    height: 510px;
+    padding: 50px;
+    background: #353b3fbf;
+}
+
+.rental-equipment-box p {
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.rental-equipment__title {
+    color: #fff;
+}
+
+.rental-equipment__description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: 0;
+    margin-bottom: 80px;
+}
+
+.rental-equipment-box .btn {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.35px;
+    line-height: 100%;
+    height: 46px;
+    width: 270px;
+    padding: 15px 0;
+    margin: 0 !important;
+}
+
+.rental-equipment-box .btn::after {
+    display: none;
+}
+
+@media (min-width: 1960px) {
+    .rental-equipment-bg img {
+        bottom: -23%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .rental-equipment-content {
+        padding: 80px 0;
+    }
+
+    .rental-equipment-bg img {
+        bottom: 0%;
+    }
+
+    .rental-equipment-box {
+        height: auto;
+        padding: 30px;
+    }
+
+    .rental-equipment__title {
+        margin-bottom: 10px;
+    }
+
+    .rental-equipment__description {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .rental-equipment-bg img {
+        bottom: -15%;
+    }
+
+    .rental-equipment-box {
+        width: 580px;
+    }
+
+    .rental-equipment__description {
+        font-size: 20px;
+    }
+
+    .rental-equipment-box .btn {
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .rental-equipment-bg img {
+        bottom: 0;
+        min-width: 900px;
+    }
+}
+
+@media (max-width: 650px) {
+    .rental-equipment-content .rental-equipment-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .rental-equipment-bg img {
+        min-height: 100%;
+        min-width: max-content;
+        margin-bottom: 0;
+    }
+
+    .rental-equipment-content .rental-equipment-box {
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .rental-equipment-bg.desktop {
+        display: none;
+    }
+    
+    .rental-equipment-bg.mobile {
+        display: block;
+    }
+
+    .rental-equipment-bg__shadow {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .rental-equipment-block {
+        height: 668px;
+    }
+
+    .rental-equipment-content {
+        padding: 20px 0;
+    }
+
+    .rental-equipment__description {
+        font-size: 16px;
+    }
+
+    .rental-equipment-box .btn {
+        width: 100%;
+    }
+}

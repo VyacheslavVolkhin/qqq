@@ -1,0 +1,233 @@
+.home-industry {
+	margin-top: 100px;
+	position: relative;
+	background: #f7f9fa;
+}
+
+.home-industry .container {
+	position: relative;
+}
+
+.home-industry-header h2 {
+	margin-bottom: 20px;
+	line-height: 100%;
+}
+
+.home-industry-header h2 a {
+	font-family: 'Roboto Condensed';
+	font-weight: 500;
+	font-size: 40px;
+	text-align: left;
+	line-height: 100%;
+	letter-spacing: 0;
+	color: #060606;
+	position: relative;
+}
+
+.home-industry-header h2 a::after {
+	content: "\e907";
+    font-family: 'icomoon';
+    font-size: 20px;
+	color: #FFCD11;
+	position: absolute;
+    top: 2px;
+    height: 100%;
+    margin-left: 10px;
+    transition: color .4s ease-in-out;
+}
+
+.home-industry-list-button .btn {
+	width: 100%;
+}
+
+.home-industry-column {
+	position: relative;
+}
+
+.home-industry-column a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-shadow: 1px 1px 10px 0px #cccccc75;
+	background: #ffffff;
+	transition: all .4s ease-in-out;
+}
+
+.home-industry-image {
+	width: 100%;
+	height: 227px;
+	transition: height .4s ease-in-out;
+}
+
+.home-industry-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	font-family: 'object-fit: cover;';
+}
+
+.home-industry-content {
+	position: relative;
+	padding: 25px;
+    text-align: left;
+}
+
+.home-industry-content .p-h5 {
+	font-family: 'Roboto Condensed';
+	font-size: 24px;
+	font-weight: 500;
+	letter-spacing: 0.4px;
+	line-height: 100%;
+	text-transform: uppercase;
+	color: #262A2C;
+	margin: 0;
+	margin-bottom: 25px;
+	height: 50px;
+	max-height: 50px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+
+	@supports (-webkit-line-clamp: 2) {
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+  	}
+}
+
+.home-industry-content .btn {
+	padding: 10px 25px;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1.35px;
+    transition: all .4s ease-in-out;
+	width: 180px;
+    height: 46px;
+}
+
+.home-industry-content .btn::after {
+	display: none;
+}
+
+.home-industry-column .home-industry-content p:not(.p-h5) {
+	display: none !important;
+}
+
+.home-industry-list-slider::after {
+	content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 15px;
+    z-index: 10;
+    background: #f7f9fa;
+}
+
+.home-industry-list-slider .slick-list {
+	padding: 30px 0;
+}
+
+.home-industry-list-slider.slick-initialized .slick-slide {
+	padding: 0 8px;
+}
+
+.home-industry-list-slider .slick-arrow {
+	position: absolute;
+	top: 45%;
+	z-index: 99;
+	font-size: 0;
+	width: 50px;
+    height: 50px;
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 100%;
+	cursor: pointer;
+	color: #262A2C;
+	transition: all .4s ease-in-out;
+}
+
+.home-industry-list-slider .slick-arrow.slick-disabled {
+	display: none !important;
+}
+
+.home-industry-list-slider .slick-arrow:not(.slick-disabled):hover {
+	background: #f0f0f0;
+}
+
+.home-industry-list-slider .slick-arrow::after {
+	content: "\ea3c";
+	font-family: 'icomoon';
+	font-size: 20px;
+	display: inline-block;
+}
+
+.home-industry-list-slider .slick-prev {
+	left: -17px;
+}
+
+.home-industry-list-slider .slick-prev::after {
+	transform: rotate(180deg);
+  	-webkit-transform: rotate(180deg);
+}
+
+.home-industry-list-slider .slick-next {
+	right: -17px;
+}
+
+.home-industry-list-button {
+	margin-top: 28px;
+}
+
+.home-industry-list.slick-loading {
+	position: relative;
+	height: 100px;
+    overflow: hidden;
+}
+
+.home-industry-list:not(.slick-loading) .home-industry-slick-loader {
+	display: none;
+}
+
+.home-industry-slick-loader {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+@media (max-width: 960px) {
+	.home-industry {
+		margin-top: 80px;
+	}
+	
+	.home-industry-header h2 {
+		margin: 0;
+	}
+}
+
+@media (max-width: 375px) {
+	.home-industry {
+		margin-top: 70px;
+	}
+
+	.home-industry .home-industry-header h2 a {
+		font-size: 24px;
+	}
+
+	.home-industry-content .home-industry-content__title  {
+		font-size: 20px;
+		height: 40px;
+		max-height: 40px;
+	}
+
+	.home-industry-content .btn {
+		padding: 12px 25px;
+		font-size: 14px;
+	}
+}

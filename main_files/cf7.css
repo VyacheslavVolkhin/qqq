@@ -1,0 +1,130 @@
+form[data-status="init"] .wpcf7-not-valid-tip{
+    display: none;
+}
+
+.wpcf7-form .choices[data-type*='select-one'] .choices__list--dropdown .choices__input {
+    display: block !important;
+}
+
+.wpcf7-form .choices .choices__inner .choices__item {
+    color: #000;
+}
+
+.choices .choices__inner .choices__placeholder {
+    opacity: 1;
+}
+
+.wpcf7-form, .wpcf7-form p {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0;
+}
+
+.wpcf7-form .form-field {
+    position: relative;
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+}
+
+.wpcf7-form .form-field .choices {
+    margin-bottom: 0;
+}
+
+.wpcf7-form .form-field .wpcf7-not-valid-tip {
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.wpcf7-form .form-field br {
+    display: none;
+}
+
+.wpcf7-form .form-field p {
+    margin: 0;
+}
+
+.wpcf7-form .form-field label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.wpcf7-form .wpcf7-checkbox label {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: none;
+    margin-bottom: 0;
+}
+
+.wpcf7-form-control-wrap:has(.wpcf7-checkbox) {
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.wpcf7-form .wpcf7-checkbox .wpcf7-list-item {
+    padding-bottom: 0;
+}
+
+.wpcf7-checkbox .wpcf7-list-item-label {
+    margin-left: 10px;
+}
+
+.wpcf7-radio .wpcf7-list-item-label {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.radio-items-row .wpcf7-list-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.radio-items-row .wpcf7-list-item.last {
+    margin-right: 0;
+}
+
+.wpcf7-form .wpcf7-not-valid-tip,
+.wpcf7-response-output {
+    color: red;
+    display: block;
+    font-size: 16px;
+}
+
+.wpcf7-form .looking-for-field {
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.wpcf7-form .zip-code-field .choices__item[data-id="1"] {
+    display: none;
+} 
+
+
+@media (min-width: 1025px) {
+    .wpcf7-form textarea, 
+    .wpcf7-form select,
+    .wpcf7-form .choices__inner,
+    .wpcf7-form [type="text"], 
+    .wpcf7-form [type="date"], 
+    .wpcf7-form [type="datetime"], 
+    .wpcf7-form [type="datetime-local"],
+    .wpcf7-form [type="email"],
+    .wpcf7-form [type="month"],
+    .wpcf7-form [type="number"],
+    .wpcf7-form [type="password"],
+    .wpcf7-form [type="search"],
+    .wpcf7-form [type="tel"],
+    .wpcf7-form [type="url"],
+    .wpcf7-form [type="week"],
+    .wpcf7-form [type="date"] {
+        height: 50px;
+    }
+
+    .wpcf7-form .choices__inner {
+        padding: 11px 44px 11px 18px !important;
+    }
+}

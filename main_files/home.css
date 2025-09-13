@@ -1,0 +1,72 @@
+@import "grid.css";
+@import "components/tabs.css";
+
+.page.home .page-content {
+    background: #f7f9fa;
+}
+
+.page.home h2,
+.page.home .section-header {
+    font-size: 40px;
+}
+
+.page.home .tabs .tabs__nav {
+    padding-right: 5px;
+}
+
+.page.home .swipe-hint {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+}
+
+.page.home section:has(.slick-loading.active) .swipe-hint {
+    display: none;
+}
+
+.page.home .swipe-hint p {
+    font-family: 'Roboto Condensed';
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+@media (max-width: 960px) {
+    .page.home h2,
+    .page.home h2 a,
+    .page.home .section-header,
+    .page.home .section-header a {
+        font-size: 32px;
+    }
+
+    .page.home .swipe-hint {
+        display: flex;
+    }
+}
+
+@media (max-width: 400px) {
+    .page.home h2, 
+    .page.home h2 a,
+    .page.home .section-header,
+    .page.home .section-header a {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .page.home h2,
+    .page.home h2 a,
+    .page.home .section-header,
+    .page.home .section-header a {
+        font-size: 20px;
+    }
+
+    .page.home h2 a::after,
+    .page.home .section-header a::after {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+}
