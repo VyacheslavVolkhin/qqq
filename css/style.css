@@ -3280,6 +3280,15 @@ body.wrap-light .text-and-image-block.section-inner .text-and-image-block-conten
   transform: translateX(-50%);
   object-fit: cover;
 }
+.section-lead-video-box.section-inner .video-inner-wrap .elm-photo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  aspect-ratio: inherit;
+  z-index: 9;
+}
 .section-lead-video-box.section-inner .video-inner-wrap #player {
   position: absolute;
   top: 0;

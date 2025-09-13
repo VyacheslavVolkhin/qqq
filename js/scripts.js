@@ -243,7 +243,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 	videoBtn.addEventListener('click', function(e) {
-		alert('click');
 		e.preventDefault(); 
 		toggleVideoPlay();
 	});
