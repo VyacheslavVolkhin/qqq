@@ -3313,6 +3313,9 @@ body.wrap-light .text-and-image-block.section-inner .text-and-image-block-conten
 .section-lead-video-box.section-inner .video-inner-wrap .btn-action-ico.active {
   opacity: 0;
 }
+.section-lead-video-box.section-inner .video-inner-wrap .btn-action-ico.activated ~ .elm-photo {
+  display: none;
+}
 .section-lead-video-box.section-inner .video-inner-wrap:hover .btn-action-ico.active {
   opacity: 1;
 }

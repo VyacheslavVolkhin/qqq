@@ -3451,7 +3451,11 @@ body.wrap-light {
 				transition: all ease 0.2s;
 				&.active {
 					opacity: 0;
-					
+				}
+				&.activated {
+					&~.elm-photo {
+						display: none;
+					}
 				}
 			}
 			&:hover {

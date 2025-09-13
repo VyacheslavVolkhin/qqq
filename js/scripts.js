@@ -234,6 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const videoBtn = document.querySelector('.btn-action-ico[data-video]');
 	const video = document.getElementById('video');
 	function toggleVideoPlay() {
+		videoBtn.classList.add('activated');
 		if (video.paused) {
 			video.play();
 			videoBtn.classList.add('active');
