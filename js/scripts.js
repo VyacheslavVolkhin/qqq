@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //video play/pause
 	const videoBtn = document.querySelector('.btn-action-ico[data-video]');
 	const video = document.getElementById('video');
-	function toggleVideo() {
+	function toggleVideoPlay() {
 		if (video.paused) {
 			video.play();
 			videoBtn.classList.add('active');
@@ -243,9 +243,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 	videoBtn.addEventListener('click', function(e) {
-		console.log('click')
+		alert('click');
 		e.preventDefault(); 
-		toggleVideo();
+		toggleVideoPlay();
 	});
 	video.addEventListener('play', function() {
 		videoBtn.classList.add('active');
