@@ -243,9 +243,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 	videoBtn.addEventListener('click', function(e) {
+		console.log('click')
 		e.preventDefault(); 
-		video.play();
-		videoBtn.classList.add('active');
+		toggleVideo();
 	});
 	video.addEventListener('play', function() {
 		videoBtn.classList.add('active');
