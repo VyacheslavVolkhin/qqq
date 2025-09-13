@@ -3193,9 +3193,6 @@ body.wrap-light .text-and-image-block.section-inner .text-and-image-block-conten
   background-image: url(../img/play.svg);
   background-size: 100% auto;
 }
-.btn-action-ico.ico-play.active {
-  display: none !important;
-}
 .btn-action-ico.ico-play.active:before {
   background-image: url(../img/pause.svg);
   background-size: 30px auto;
